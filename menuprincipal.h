@@ -41,6 +41,10 @@ private slots:
 
     void on_botonDesocuparEstacion_clicked();
 
+    void on_botonVolverPrincipal_3_clicked();
+
+    void on_botonEstadisticas_clicked();
+
 private:
     Ui::MenuPrincipal *ui;
     QList<QLabel *> estaciones;

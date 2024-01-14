@@ -111,3 +111,16 @@ void MenuPrincipal::on_botonDesocuparEstacion_clicked()
     ingresarAutos.at(seleccionado)->setStyleSheet("QLabel { background-color: rgb(143, 240, 164); }");
 }
 
+
+void MenuPrincipal::on_botonVolverPrincipal_3_clicked()
+{
+    ui->stackedWidget->setCurrentWidget(ui->principal);
+}
+
+
+
+void MenuPrincipal::on_botonEstadisticas_clicked()
+{
+    ui->stackedWidget->setCurrentWidget(ui->estadisticas);
+}
+
