@@ -271,6 +271,41 @@ color: rgb(255, 255, 255);</string>
        <string>Kilometros Recorridos</string>
       </property>
      </widget>
+     <widget class="QLineEdit" name="insertarPropietario_2">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>420</y>
+        <width>311</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>Estacion (numeros separados con coma)</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>390</y>
+        <width>311</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Estaciones a las que ira el carro</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="estaciones">
      <widget class="QPushButton" name="pushButton_3">
@@ -322,6 +357,54 @@ color: rgb(255, 255, 255);</string>
       </property>
       <property name="text">
        <string>Volver</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="botonOcuparEstacion">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>470</y>
+        <width>89</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(246, 97, 81);</string>
+      </property>
+      <property name="text">
+       <string>Ocupar</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="botonDesocuparEstacion">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>470</y>
+        <width>89</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(143, 240, 164);</string>
+      </property>
+      <property name="text">
+       <string>Desocupar</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="selectorEstacion">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>430</y>
+        <width>201</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="maximum">
+       <number>7</number>
       </property>
      </widget>
     </widget>

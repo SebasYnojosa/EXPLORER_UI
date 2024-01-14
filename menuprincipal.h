@@ -21,7 +21,7 @@ public:
 
 
 private slots:
-    void generarBotones(QList<QPushButton *> *lista,QWidget *pagina, int posX, int posY);
+    void generarEstacionesLabels(QList<QLabel *> *lista,QWidget *pagina, int posX, int posY);
 
     void on_botonEstaciones_clicked();
 
@@ -37,10 +37,14 @@ private slots:
 
     void on_botonRegistrarCarro_clicked();
 
+    void on_botonOcuparEstacion_clicked();
+
+    void on_botonDesocuparEstacion_clicked();
+
 private:
     Ui::MenuPrincipal *ui;
     QList<QLabel *> estaciones;
-    QList<QPushButton *> colaPlanificador;
-    QList<QPushButton *> ingresarAutos;
+    QList<QLabel *> colaPlanificador;
+    QList<QLabel *> ingresarAutos;
 };
 #endif // MENUPRINCIPAL_H
