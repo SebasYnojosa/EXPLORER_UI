@@ -35,6 +35,8 @@ private slots:
 
     void on_botonIngresarAutos_clicked();
 
+    void on_botonRegistrarCarro_clicked();
+
 private:
     Ui::MenuPrincipal *ui;
     QList<QLabel *> estaciones;

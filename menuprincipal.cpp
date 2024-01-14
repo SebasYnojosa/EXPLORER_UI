@@ -1,7 +1,8 @@
 #include "menuprincipal.h"
 #include "ui_menuprincipal.h"
 
-
+#include <iostream>
+#include <QString>
 
 MenuPrincipal::MenuPrincipal(QWidget *parent)
     : QMainWindow(parent)
@@ -25,6 +26,9 @@ MenuPrincipal::MenuPrincipal(QWidget *parent)
 
     // Botones para el ingreso de autos
     generarBotones(&ingresarAutos, ui->ingresarAutos, 205, 150);
+
+    // Hacer que en la pagina de registro de carros, el input hacepte numeros grandes
+    ui->insertarKm->setRange(0, 1000000000);
 
 }
 
@@ -78,3 +82,19 @@ void MenuPrincipal::on_botonIngresarAutos_clicked()
 {
     ui->stackedWidget->setCurrentWidget(ui->ingresarAutos);
 }
+
+void MenuPrincipal::on_botonRegistrarCarro_clicked()
+{
+    /* Primero agarra el texto del input, lo pasa a mayusculas todo el texto y
+    lo convierte en un std::string para que std::cout lo pueda leer */
+    std::cout << "Carro:{ Placa: " << ui->insertarPlaca->text().toUpper().toStdString()
+              << ", Color: " << ui->insertarColor->text().toStdString()
+              << ", Dueño: " << ui->insertarPropietario->text().toStdString()
+              << ", Kilometros recorridos: " << ui->insertarKm->text().toInt() << " } ";
+
+    ui->insertarPlaca->clear();
+    ui->insertarColor->clear();
+    ui->insertarPropietario->clear();
+    ui->insertarKm->clear();
+}
+
